@@ -37,14 +37,28 @@ Una implementación simple de la regresión KNN es calcular el promedio del obje
 
 Las tres medidas de distancia anteriores solo son válidas para variables continuas. En el caso de variables categóricas, debe usar la distancia de Hamming, que es una medida del número de instancias en las que los símbolos correspondientes son diferentes en dos cadenas de igual longitud. 		
 
-La mejor forma de elegir el valor óptimo de K es inspeccionando primero los datos. En general, un valor de K grande es más preciso ya que reduce el ruido general; sin embargo, el compromiso es que los límites distintos dentro del espacio de características se difuminan. 
 
-La validación cruzada es otra forma de determinar retrospectivamente un buen valor de K mediante el uso de un conjunto de datos independientes para validar su valor de K. La K óptima para la mayoría de los conjuntos de datos es 10 o más. Eso produce resultados mucho mejores que 1-NN.
+Podemos usar el mismo tipo de enfoque de vecinos más cercanos para las regresiones, donde queremos un valor individual en lugar de una clasificación.
+
+Nuestra 'regresión' en este caso no será una fórmula única como nos daría un modelo OLS, sino más bien un valor de salida mejor predicho para cualquier entrada dada
+
+Sin resolver ninguna ecuación, podemos llegar a una aproximación razonable de cuál debería ser la salida simplemente considerando los puntos cercanos.
+Tiene sentido que el valor pronosticado esté cerca de estos puntos, ni mucho más bajo ni más alto. Quizás una buena predicción sería el promedio de estos puntos
+
+![image](https://user-images.githubusercontent.com/28718644/94986589-5a857280-0536-11eb-9b93-2fe2b02708d2.png)
+
+Conectar todas estas predicciones con una línea nos da nuestra regresión:
+
+![image](https://user-images.githubusercontent.com/28718644/94986602-6e30d900-0536-11eb-9a9c-ad2003714b03.png)
+
+una ventaja de la simplicidad de esta implementación es que maneja bien la no linealidad.
 
 ![image](https://user-images.githubusercontent.com/28718644/94986451-560c8a00-0535-11eb-919c-716b120198be.png)
 
 
+La mejor forma de elegir el valor óptimo de K es inspeccionando primero los datos. En general, un valor de K grande es más preciso ya que reduce el ruido general; sin embargo, el compromiso es que los límites distintos dentro del espacio de características se difuminan. 
 
+La validación cruzada es otra forma de determinar retrospectivamente un buen valor de K mediante el uso de un conjunto de datos independientes para validar su valor de K. La K óptima para la mayoría de los conjuntos de datos es 10 o más. Eso produce resultados mucho mejores que 1-NN.
 
 
 
