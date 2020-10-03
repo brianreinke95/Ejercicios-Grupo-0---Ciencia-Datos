@@ -15,9 +15,13 @@ Las SVM resuelven problemas de clasificación binaria formulándolos como proble
 
 La escasa solución y la buena generalización de la SVM se prestan a la adaptación a los problemas de regresión. La generalización de SVM a SVR se logra mediante la introducción de una región ε- insensible alrededor de la función, llamada ε-tubo. Este tubo reformula el problema de optimización para encontrar el tubo que mejor se aproxima a la función de valor continuo, mientras equilibra la complejidad del modelo y el error de predicción. 
 
+![image](https://user-images.githubusercontent.com/28718644/94986334-6839f880-0534-11eb-8ff1-a733679b9d2e.png)
+
 Más específicamente, la RVS se formula como un problema de optimización definiendo primero un ε convexo-Función de pérdida insensible para minimizar y encontrar el tubo más plano que contiene la mayoría de las instancias de entrenamiento. 
 
 Por tanto, se construye una función multiobjetivo a partir de la función de pérdida y las propiedades geométricas del tubo. Luego, se resuelve la optimización convexa, que tiene una solución única, utilizando los algoritmos de optimización numérica apropiados. El hiperplano se representa en términos de vectores de soporte, que son muestras de entrenamiento que se encuentran fuera del límite del tubo. 
+
+![image](https://user-images.githubusercontent.com/28718644/94986362-94ee1000-0534-11eb-87ee-dbf822cf61b0.png)
 
 Como en SVM, los vectores de soporte en SVR son las instancias más influyentes que afectan la forma del tubo, y se asume que los datos de entrenamiento y prueba son independientes e idénticamente distribuidos (iid), extraídos de la misma función de distribución de probabilidad fija pero desconocida en un contexto de aprendizaje supervisado.
 
