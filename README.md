@@ -39,8 +39,7 @@ La mejor forma de elegir el valor óptimo de K es inspeccionando primero los dat
 
 La validación cruzada es otra forma de determinar retrospectivamente un buen valor de K mediante el uso de un conjunto de datos independientes para validar su valor de K. La K óptima para la mayoría de los conjuntos de datos es 10 o más. Eso produce resultados mucho mejores que 1-NN.
 
-
-
+![image](https://user-images.githubusercontent.com/28718644/94986451-560c8a00-0535-11eb-919c-716b120198be.png)
 
 
 
