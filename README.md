@@ -1,5 +1,6 @@
 # Ejercicios-Grupo-0---Ciencia-Datos
-Grupo 0. Integrantes: Tomás De Stefano; Pedro Kopyto; Brian Reinke
+Grupo 0. 
+Integrantes: Tomás De Stefano; Pedro Kopyto; Brian Reinke
 
 ## En este repositorio se irán subiendo los distintos ejercicios desarrollados en la cursada.
 
