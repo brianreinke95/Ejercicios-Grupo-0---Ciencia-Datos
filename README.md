@@ -45,16 +45,16 @@ Nuestra 'regresión' en este caso no será una fórmula única como nos daría u
 Sin resolver ninguna ecuación, podemos llegar a una aproximación razonable de cuál debería ser la salida simplemente considerando los puntos cercanos.
 Tiene sentido que el valor pronosticado esté cerca de estos puntos, ni mucho más bajo ni más alto. Quizás una buena predicción sería el promedio de estos puntos
 
+![image](https://user-images.githubusercontent.com/28718644/94986451-560c8a00-0535-11eb-919c-716b120198be.png)
 ![image](https://user-images.githubusercontent.com/28718644/94986589-5a857280-0536-11eb-9b93-2fe2b02708d2.png)
 
 Conectar todas estas predicciones con una línea nos da nuestra regresión:
 
 ![image](https://user-images.githubusercontent.com/28718644/94986602-6e30d900-0536-11eb-9a9c-ad2003714b03.png)
 
-una ventaja de la simplicidad de esta implementación es que maneja bien la no linealidad.
+Una ventaja de la simplicidad de esta implementación es que maneja bien la no linealidad.
 
-![image](https://user-images.githubusercontent.com/28718644/94986451-560c8a00-0535-11eb-919c-716b120198be.png)
-
+![image](https://user-images.githubusercontent.com/28718644/94986669-e7303080-0536-11eb-88e2-7472f4195f21.png)
 
 La mejor forma de elegir el valor óptimo de K es inspeccionando primero los datos. En general, un valor de K grande es más preciso ya que reduce el ruido general; sin embargo, el compromiso es que los límites distintos dentro del espacio de características se difuminan. 
 
